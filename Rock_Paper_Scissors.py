@@ -10,6 +10,7 @@ def condition_for_win(user, opponent):      # Checking the conditions if the pla
 
 
 def play_Rock_Paper_Scissors():
+    print()
     print("Welcome to the Rock-Paper-Scissors game. "
           "\nHere are the available options: "
           "\n-- 'r' for rock\n-- 'p' for paper\n-- 's' for scissors")
@@ -69,6 +70,15 @@ def play_Rock_Paper_Scissors():
             print("The opponent's choice is: 'Scissors'")
 
         print('Bad luck.. You lose')
+
+    print()
+    print("Do you want to play again??\nIf yes then enter 'y' and if no then enter 'n'")
+    user_again = input('Enter your option: ')
+    if user_again == 'y':
+        play_Rock_Paper_Scissors()
+    else:
+        print('Thanks for playing. Hope you enjoyed.')
+        exit()
 
 
 play_Rock_Paper_Scissors()
